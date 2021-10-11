@@ -18,10 +18,10 @@ import com.documaster.idp.client.HttpClientIDP;
 import com.documaster.idp.client.OpenIDConnectScope;
 import com.documaster.rms.noark.ws.client.NoarkClient;
 import com.documaster.rms.noark.ws.client.RmsClient;
+import com.documaster.rms.noark.ws.client.bsm.BsmField;
+import com.documaster.rms.noark.ws.client.bsm.BsmGroupInfo;
 import com.documaster.rms.noark.ws.client.bsm.BusinessSpecificMetadataInfo;
 import com.documaster.rms.noark.ws.client.bsm.FieldType;
-import com.documaster.rms.noark.ws.client.bsm.MetadataFieldInfo;
-import com.documaster.rms.noark.ws.client.bsm.MetadataGroupInfo;
 import com.documaster.rms.noark.ws.client.codelist.CodeList;
 import com.documaster.rms.noark.ws.client.codelist.CodeValue;
 import com.documaster.rms.noark.ws.client.query.Order;
@@ -609,11 +609,11 @@ public class Program {
 		String doubleFieldId = null;
 		String longFieldId = null;
 
-		for (MetadataGroupInfo groupInfo : metadataInfo.getGroups()) {
+		for (BsmGroupInfo groupInfo : metadataInfo.getGroups()) {
 
 			print("    GroupInfo: GroupId=%s, GroupName=%s", groupInfo.getGroupId(), groupInfo.getGroupName());
 
-			for (MetadataFieldInfo fieldInfo : groupInfo.getFields()) {
+			for (BsmField fieldInfo : groupInfo.getFields()) {
 
 				print(
 						"        FieldInfo: FieldId=%s, FieldType=%s, FieldName=%s", fieldInfo.getFieldId(),
