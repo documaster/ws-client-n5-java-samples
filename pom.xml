@@ -17,14 +17,14 @@
 
 		<dependency>
 			<groupId>com.documaster.rms</groupId>
-			<artifactId>noark-ws-client</artifactId>
-			<version>0.1.0</version>
+			<artifactId>documaster-ws-client-n5</artifactId>
+			<version>1.5.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.documaster.idp</groupId>
-			<artifactId>idp-ws-client</artifactId>
-			<version>0.2.2</version>
+			<artifactId>documaster-ws-client-idp</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 
 	</dependencies>
